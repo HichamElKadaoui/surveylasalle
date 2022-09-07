@@ -1,0 +1,14 @@
+DB à créer :
+Formulaires :
+
+    IDForm
+    NomFormulaire
+    Temps
+    Question
+    Option A
+    Option B
+    Option C
+    Voted A
+    Voted B
+    Voted C
+
