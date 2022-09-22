@@ -1,3 +1,8 @@
+<?php
+include '../db/SendSurvey.php';
+include '../db/connexion.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,32 +19,42 @@
 
 
 
+
 <div class="formulaire">
     <h1>¡Cree su formulario!</h1>
-    <form id="CreateForm" method="post">
-        <div class="user-box">
-            <input type="text" name="nameform" id="nameform">
+    <?php
+    echo "
+    <form id='CreateForm' method='POST' action='".setComments($conn)."'>
+        <div class='user-box'>
             <label>¿Cuál es el nombre de su formulario?</label>
-            <div class="anonyme">
-                <p class="lanonyme">¿Las respuestas son anónimas?</p>
-                <p></p>
-                <input type="checkbox" class="cboxa" name="cnameform" id="cnameform" >
-            </div>
+            <br>
+            <input type='text' name='name' id='name'>
+            
+        <div class='user-box'>
+            <label>¿Cuando tiempo toma tu Survey ?</label>
+            <br>
+            <input type='number' name='time' id='time'>         
+            
         </div>
-        <div class="user-box">
-            <input type="text" name="timeform" id="timeform">
-            <label>Tiempo estimado de respuesta (en minutos) :</label>
+        <div class='user-box'>
+            <label>Tiempo estimado de respuesta :</label> 
+            <br>
+            <input type='text' name='timeform' id='timeform'>
+            
         </div>
 
-        <button id="button" type="submit" onclick="location.href='Createform2.php">Enviar<span></span> <span></span>
+        <button id='button' type='submit'>Enviar<span></span> <span></span>
             <span></span> <span></span></button>
 
-        <button id="button" onclick="location.href='Createform.php'" type="button">Descontinuar<span></span><span>
+        <button id='button' onclick='location.href='Createform.php'' type='button'>Descontinuar<span></span><span>
         </span><span></span><span></span></button>
-        <p id="erreur1"></p>
+        <p id='erreur1'></p>
 
-    </form>
+    </form>";
+
+?>
 </div>
+
 
 </body>
 </html>

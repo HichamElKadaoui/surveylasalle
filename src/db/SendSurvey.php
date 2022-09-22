@@ -6,6 +6,7 @@ function setComments($conn)
     if (isset($_POST['commentSubmit'])) {
         $name = $_POST['name'];
         $time = $_POST['time'];
+        $globquestion = $_POST['globquestion'];
         $questionA = $_POST['questionA'];
         $questionB = $_POST['questionB'];
         $questionC = $_POST['questionC'];
@@ -13,8 +14,8 @@ function setComments($conn)
         $votedB = $_POST['votedB'];
         $votedC = $_POST['votedC'];
 
-        $sql = "INSERT INTO forms (name, time, questionA, questionB, questionC, votedA, votedB, votedC)
-         VALUES ('$name', '$time', '$questionA', '$questionB', '$questionC', '$votedA', '$votedB', '$votedC')";
+        $sql = "INSERT INTO forms (name, time, globquestion, questionA, questionB, questionC, votedA, votedB, votedC)
+         VALUES ('$name', '$time', '$globquestion', '$questionA', '$questionB', '$questionC', '$votedA', '$votedB', '$votedC')";
 
         $result = $conn->query($sql);
     }

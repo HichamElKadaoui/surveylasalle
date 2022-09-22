@@ -32,6 +32,7 @@ CREATE TABLE IF NOT EXISTS `forms` (
   `IDForm` int(100) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `time` int(11) NOT NULL,
+  `globquestion` varchar(255) NOT NULL,
   `questionA` varchar(255) NOT NULL,
   `questionB` varchar(255) NOT NULL,
   `questionC` varchar(255) NOT NULL,
