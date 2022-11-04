@@ -7,7 +7,7 @@ body {
     margin:0;
     padding:0;
     font-family: sans-serif;
-    background: linear-gradient(#141e30, #243b55);
+    background-color:#141e30 ;
 }
 h1 {
     color: #ffffff;
@@ -32,7 +32,7 @@ h2, a {
 
 .formulaire {
     position: absolute;
-    top: 90%;
+    top: 165%;
     left: 50%;
     width: 400px;
     padding: 40px;
@@ -61,12 +61,14 @@ h2, a {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: #fff;
+    color: #03e9f4;
     margin-bottom: 20px;
     border: none;
     border-bottom: 1px solid #fff;
     outline: none;
     background: transparent;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 .formulaire .user-box1 input {
     width: 50%;
@@ -112,7 +114,8 @@ h2, a {
     overflow: hidden;
     transition: .5s;
     margin-top: 40px;
-    letter-spacing: 4px
+    letter-spacing: 4px;
+    margin-bottom: 2em;
 }
 .formulaire button:hover {
     background: #03e9f4;

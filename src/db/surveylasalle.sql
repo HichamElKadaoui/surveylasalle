@@ -36,9 +36,6 @@ CREATE TABLE IF NOT EXISTS `forms` (
   `questionA` varchar(255) NOT NULL,
   `questionB` varchar(255) NOT NULL,
   `questionC` varchar(255) NOT NULL,
-  `votedA` int(11) NOT NULL,
-  `votedB` int(11) NOT NULL,
-  `votedC` int(11) NOT NULL,
   PRIMARY KEY (`IDForm`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 COMMIT;

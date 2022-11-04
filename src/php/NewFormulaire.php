@@ -24,31 +24,65 @@ include '../db/connexion.php';
     <h1>¡Cree su formulario!</h1>
     <?php
     echo "
-    <form id='CreateForm' method='POST' action='".setComments($conn)."'>
+    <form id='CreateForm' method='POST' action='".setComments($conn). "'>
         <div class='user-box'>
-            <label>¿Cuál es el nombre de su formulario?</label>
-            <br>
+        
+            <div class='user-box'>
+            <label for='name'>¿Cuál es el nombre de su formulario?</label>
+            <br><br>
             <input type='text' name='name' id='name'>
+            </div>
+        
+            <div class='user-box'>
+            <label for='time'>¿Cuando tiempo toma tu Survey ? (en minutos)</label>
+            <br><br>
+            <input type='number' name='time' id='time'>             
+            </div>
+        
+            <div class='user-box'>
+            <label for='globquestion'>¿Cuál es su pregunta?</label>
+            <br><br>
+            <input type='text' name='globquestion' id='globquestion'>             
+            </div>
             
-        <div class='user-box'>
-            <label>¿Cuando tiempo toma tu Survey ?</label>
-            <br>
-            <input type='number' name='time' id='time'>         
+            <div class='user-box'>
+            <label for='votedA'>Respuesta A</label>
+            <br><br>
+            <input type='text' name='questionA' id='questionA'>
+            </div>
             
-        </div>
-        <div class='user-box'>
-            <label>Tiempo estimado de respuesta :</label> 
-            <br>
-            <input type='text' name='timeform' id='timeform'>
+            <div class='user-box'>
+            <label for='votedB'>Respuesta B</label>
+            <br><br>
+            <input type='text' name='questionB' id='questionB'>
+            </div>
             
-        </div>
-
-        <button id='button' type='submit'>Enviar<span></span> <span></span>
+            <div class='user-box'>
+            <label for='votedC'>Respuesta C</label>
+            <br><br>
+            <input type='text' name='questionC' id='questionC'>
+            </div>
+        
+        <form action='index.php' id='button'>
+        <button id='button' type='submit' name='commentSubmit'>Enviar<span></span> <span></span>
             <span></span> <span></span></button>
-
-        <button id='button' onclick='location.href='Createform.php'' type='button'>Descontinuar<span></span><span>
-        </span><span></span><span></span></button>
+        </form>
+            
+            
+            
+            
+        <form action='#' id='button'>
+        </form>
+            
+        
+      
+        <form action='index.php' id='button'>
+        <input id='button' type='submit' value='Discontinuar'>
+        </form>     
+        
+        
         <p id='erreur1'></p>
+        </div>
 
     </form>";
 

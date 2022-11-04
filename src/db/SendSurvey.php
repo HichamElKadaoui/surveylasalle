@@ -10,12 +10,9 @@ function setComments($conn)
         $questionA = $_POST['questionA'];
         $questionB = $_POST['questionB'];
         $questionC = $_POST['questionC'];
-        $votedA = $_POST['votedA'];
-        $votedB = $_POST['votedB'];
-        $votedC = $_POST['votedC'];
 
-        $sql = "INSERT INTO forms (name, time, globquestion, questionA, questionB, questionC, votedA, votedB, votedC)
-         VALUES ('$name', '$time', '$globquestion', '$questionA', '$questionB', '$questionC', '$votedA', '$votedB', '$votedC')";
+        $sql = "INSERT INTO forms (name, time, globquestion, questionA, questionB, questionC)
+         VALUES ('$name', '$time', '$globquestion', '$questionA', '$questionB', '$questionC')";
 
         $result = $conn->query($sql);
     }
@@ -32,9 +29,7 @@ function getComments($conn)
         echo $row['questionA'] . "<br>";
         echo $row['questionB'] . "<br>";
         echo $row['questionC'] . "<br>";
-        echo $row['votedA'] . "<br>";
-        echo $row['votedB'] . "<br>";
-        echo $row['votedC'] . "<br>";
+
         echo "</p></div>";
     }
 

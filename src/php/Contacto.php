@@ -46,15 +46,15 @@
 
     <div id="legende">
         <span class="photo">
-            <img src="../images/moi.jpg">
+            <img src="../images/logo2.png">
             <p>Carolina Gonzales : email@lasallistas.org.mx</p>
         </span>
         <span class="photo">
-            <img src="../images/moi.jpg">
+            <img src="../images/logo2.png">
             <p>Karime : email@lasallistas.org.mx</p>
         </span>
         <span class="photo">
-            <img src="../images/moi.jpg">
+            <img src="../images/logo2.png">
             <p>Hicham El Kadaoui : hicham.el@lasallistas.org.mx</p>
         </span>
     </div>
