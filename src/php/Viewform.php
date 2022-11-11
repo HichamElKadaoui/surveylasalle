@@ -1,9 +1,17 @@
+<?php
+include '../db/SendSurvey.php';
+include '../db/connexion.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ver los formularios</title>
+    <title>Ver los Formularios</title>
     <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/Viewform.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
 
@@ -42,5 +50,65 @@
 <br><br><br><br>
 
 <p>En esta página puede buscar los formularios de todos los usuarios.</p>
+
+
+
+<div class="container">
+    <div class="row height d-flex justify-content-center align-items-center">
+
+        <div class="col-md-6">
+
+            <div class="form">
+                <i class="fa fa-search"></i>
+                <input type="text" class="form-control form-input" placeholder="Busca un formulario">
+                <span class="left-pan"><i class="fa fa-microphone"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col m-auto">
+            <div class="card mt-5 text-dark">
+
+
+<table style="background-color: #0c5460" class="table table-bordered">
+    <tr>
+        <td>Los Formularios</td>
+    </tr>
+</table>
+
+
+<?php
+
+        $sql = "select * from forms";
+        $result = $conn->query($sql);
+
+        while ($row=mysqli_fetch_assoc($result))
+        {
+            $name = $row['name'];
+            $ID = $row['IDForm'];
+
+?>
+
+    <tr class="ml-0">
+        <td><span><?php echo $name?></span>
+            <span><a href="edit.php?GetID=<?php echo $ID ?>">Edit</a></span>
+            <span><a href="delete.php?Del=<?php echo $ID ?>">Delete</a></span>
+            <hr></td>
+    </tr>
+
+<?php
+        }
+?>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 </body>
 </html>

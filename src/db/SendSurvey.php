@@ -19,18 +19,20 @@ function setComments($conn)
 
 }
 
-function getComments($conn)
+function updateforms($conn)
 {
-    $sql = "SELECT * FROM forms";
-    $result = $conn->query($sql);
-    while ($row = $result->fetch_assoc()) {
-        echo "<div class='comment-box'><p>";
-        echo $row['name'] . " ";
-        echo $row['questionA'] . "<br>";
-        echo $row['questionB'] . "<br>";
-        echo $row['questionC'] . "<br>";
+    if (isset($_POST['updateforms'])){
+        $IDForm = $_POST['IDForm'];
+        $name = $_POST['name'];
+        $time = $_POST['time'];
+        $globquestion = $_POST['globquestion'];
+        $questionA = $_POST['questionA'];
+        $questionB = $_POST['questionB'];
+        $questionC = $_POST['questionC'];
 
-        echo "</p></div>";
+        $sql = " UPDATE forms SET name = '".$name."', time = '".$time."', globquestion = '".$globquestion."', questionA = '".$questionA."', questionB = '".$questionB."', questionC = '".$questionC."' where IDForm = '".$IDForm."'";
+
+        $result = mysqli_query($conn, $sql);
     }
-
 }
+

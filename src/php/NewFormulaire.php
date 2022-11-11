@@ -24,9 +24,8 @@ include '../db/connexion.php';
     <h1>¡Cree su formulario!</h1>
     <?php
     echo "
-    <form id='CreateForm' method='POST' action='".setComments($conn). "'>
+    <form id='CreateForm' method='POST' action='".setComments($conn)."'>
         <div class='user-box'>
-        
             <div class='user-box'>
             <label for='name'>¿Cuál es el nombre de su formulario?</label>
             <br><br>
