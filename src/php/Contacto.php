@@ -1,3 +1,7 @@
+<?php
+namespace App;
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -47,11 +51,11 @@
     <div id="legende">
         <span class="photo">
             <img src="../images/logo2.png">
-            <p>Carolina Gonzales : email@lasallistas.org.mx</p>
+            <p>Carolina González : email@lasallistas.org.mx</p>
         </span>
         <span class="photo">
             <img src="../images/logo2.png">
-            <p>Karime : email@lasallistas.org.mx</p>
+            <p>Karime Aylen de la Cruz Vargas : ka.dlcv@lasallistas.org.mx</p>
         </span>
         <span class="photo">
             <img src="../images/logo2.png">

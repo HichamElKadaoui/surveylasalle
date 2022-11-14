@@ -1,3 +1,7 @@
+<?php
+namespace App;
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -49,8 +53,9 @@
             <li class="presentation">Cree sus propios formularios</li>
             <li class="presentation">Recuperación de los formularios</li>
             <li class="presentation">Modificar los formularios</li>
+            <li class="presentation">Borrar formularios</li>
         </ul>
-        <p class="presentation">Los formularios tienen la forma de una pregunta de Sí o No</p>
+        <p class="presentation">Los formularios se presentan en forma de preguntas que hay que marcar</p>
         <p class="presentation">Diviértete !</p>
     </div>
     </body>

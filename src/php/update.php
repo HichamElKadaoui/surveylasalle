@@ -1,5 +1,5 @@
 <?php
-
+namespace App;
 require_once '../db/connexion.php';
 
 

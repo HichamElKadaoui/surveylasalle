@@ -1,5 +1,7 @@
 <?php
 
+    namespace App;
+
     require_once ('../db/connexion.php');
 
     if(isset($_GET['Del']))

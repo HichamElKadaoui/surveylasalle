@@ -1,4 +1,5 @@
 <?php
+namespace App;
 include '../db/SendSurvey.php';
 include '../db/connexion.php';
 
@@ -94,8 +95,8 @@ include '../db/connexion.php';
 
     <tr class="ml-0">
         <td><span><?php echo $name?></span>
-            <span><a href="edit.php?GetID=<?php echo $ID ?>">Edit</a></span>
-            <span><a href="delete.php?Del=<?php echo $ID ?>">Delete</a></span>
+            <span><a href="edit.php?GetID=<?php echo $ID ?>">Editar</a></span>
+            <span><a href="delete.php?Del=<?php echo $ID ?>">Borrar</a></span>
             <hr></td>
     </tr>
 

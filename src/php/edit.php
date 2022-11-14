@@ -1,5 +1,7 @@
 <?php
 
+    namespace App;
+
 include '../db/connexion.php';
 include 'update.php';
 $ID = $_GET['GetID'];

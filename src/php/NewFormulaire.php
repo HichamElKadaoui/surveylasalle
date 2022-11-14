@@ -1,4 +1,5 @@
 <?php
+namespace App;
 include '../db/SendSurvey.php';
 include '../db/connexion.php';
 ?>
