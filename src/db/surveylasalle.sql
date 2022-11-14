@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mer. 07 sep. 2022 à 00:42
+-- Généré le : lun. 14 nov. 2022 à 03:55
 -- Version du serveur : 5.7.36
 -- Version de PHP : 8.0.13
 
@@ -37,8 +37,25 @@ CREATE TABLE IF NOT EXISTS `forms` (
   `questionB` varchar(255) NOT NULL,
   `questionC` varchar(255) NOT NULL,
   PRIMARY KEY (`IDForm`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-COMMIT;
+) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `tests`
+--
+
+DROP TABLE IF EXISTS `tests`;
+CREATE TABLE IF NOT EXISTS `tests` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `test` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `tests`
+--
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
