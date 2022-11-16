@@ -74,7 +74,7 @@ while($row=mysqli_fetch_assoc($result))
         </div>
 
         <form action='index.php' id='button'>
-            <button id='button' type='submit' name=update>Enviar<span></span> <span></span>
+            <button style="background-color: white; margin-top: 1.5%; margin-bottom: 1.5%" id='button' type='submit' name=update>Enviar<span></span> <span></span>
                 <span></span> <span></span></button>
         </form>
 
