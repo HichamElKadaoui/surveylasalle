@@ -48,19 +48,17 @@ namespace App;
 <div class="contact">
     <h3 class="contact">¿Quiénes somos?</h3>
 
+    <p>Somos tres estudiantes de la Universidad LaSalle, si tienes alguna necesidad sobre el sitio, puedes contactarnos a los siguientes correos</p>
+
     <div id="legende">
-        <span class="photo">
-            <img src="../images/logo2.png">
-            <p>Carolina González : email@lasallistas.org.mx</p>
-        </span>
-        <span class="photo">
-            <img src="../images/logo2.png">
-            <p>Karime Aylen de la Cruz Vargas : ka.dlcv@lasallistas.org.mx</p>
-        </span>
-        <span class="photo">
-            <img src="../images/logo2.png">
-            <p>Hicham El Kadaoui : hicham.el@lasallistas.org.mx</p>
-        </span>
+
+
+        <p>Carolina González : <a href=mailto:"c.gonzalez@lasallistas.org.mx">c.gonzalez@lasallistas.org.mx</a></p>
+
+
+        <p>Karime Aylen de la Cruz Vargas : <a href=mailto:"ka.dlcv@lasallistas.org.mx">ka.dlcv@lasallistas.org.mx</a></p>
+
+        <p>Hicham El Kadaoui : <a href=mailto:"hicham.el@lasallistas.org.mx">hicham.el@lasallistas.org.mx</a></p>
     </div>
 </div>
 
